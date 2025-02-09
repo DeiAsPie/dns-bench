@@ -63,6 +63,7 @@ while IFS=, read -r col1 col2 col3 col4 col5 col6; do
     fi
 done < <(tail -n +2 "$csv_file") # skip header
 
+# Print summary to terminal
 echo "resolved_domains_ns1 ($ns1_ip): $resolved_by_ns1"
 echo "resolved_domains_ns2 ($ns2_ip): $resolved_by_ns2"
 echo "resolved_domains_ns3 ($ns3_ip): $resolved_by_ns3"
